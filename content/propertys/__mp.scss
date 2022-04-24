@@ -1,0 +1,27 @@
+@each $key, $value in $mp-key {
+  @for $i from 1 through length($mp) {
+    @if $value == "mp" {
+      .mx-#{$i} {
+        margin: 0 #{nth($mp, $i)}px;
+      }
+    
+      .my-#{$i} {
+        margin: #{nth($mp, $i)}px 0;
+      }
+
+      .px-#{$i} {
+        padding: 0 #{nth($mp, $i)}px;
+      }
+    
+      .py-#{$i} {
+        padding: #{nth($mp, $i)}px 0;
+      }
+    }
+    
+    @else {
+      .#{$value}-#{$i} {
+        #{$key}: #{nth($mp, $i)}px;
+      }
+    }
+  }
+}

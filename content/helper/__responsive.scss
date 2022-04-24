@@ -1,0 +1,29 @@
+@mixin gr-lr {
+  @media screen and (min-width:#{$grid-lr}px) {
+    @content;
+  }
+}
+
+@mixin gr-md {
+  @media screen and (min-width:#{$grid-md}px) {
+    @content;
+  }
+}
+
+@mixin gr-sm {
+  @media screen and (min-width:#{$grid-sm}px) {
+    @content;
+  }
+}
+
+@mixin gr-xxs {
+  @media screen and (min-width:#{$grid-xxs}px) {
+    @content;
+  }
+}
+
+@mixin gr-mmd {
+  @media screen and (max-width:#{$grid-md}px) {
+    @content;
+  }
+}

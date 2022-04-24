@@ -1,0 +1,15 @@
+@mixin feature-create($list, $breakpoint: "") {
+  $additional: "";
+
+  @if $breakpoint != "" {
+    $additional: -#{$breakpoint}
+  }
+
+  @each $key, $value in $list {
+    @for $i from 1 through length(map-get($value, feature-list)) {
+      .#{map-get($value, class)}_#{nth(map-get($value, feature-list), $i)}#{$additional} {
+        #{$key}: nth(map-get($value, feature-list), $i)
+      }
+    }
+  }
+}

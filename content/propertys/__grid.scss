@@ -1,0 +1,60 @@
+.grid__box {
+  width: 100%;
+}
+
+.grid__container {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include gr-mmd {
+    width: 100%;
+  }
+}
+
+.grid__box,
+.grid__container {
+  .grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+.grid__row {
+  @include gr-xxs {
+    @for $i from 1 through $gridBoundary {
+      @for $j from 1 through length($gridBetweens) {
+          $extraction: #{(nth($gridBetweens, $j) * 2) * ($gridBoundary / $i)}px;
+          @include gr-create($i, nth($gridBetweens, $j), $extraction);
+      }
+    }
+  }
+
+  @include gr-sm {
+    @for $i from 1 through $gridBoundary {
+      @for $j from 1 through length($gridBetweens) {
+        $extraction: #{(nth($gridBetweens, $j) * 2) * ($gridBoundary / $i)}px;
+        @include gr-create($i, nth($gridBetweens, $j), $extraction, "sm");
+      }
+    }
+  }
+
+  @include gr-md {
+    @for $i from 1 through $gridBoundary {
+      @for $j from 1 through length($gridBetweens) {
+        $extraction: #{(nth($gridBetweens, $j) * 2) * ($gridBoundary / $i)}px;
+        @include gr-create($i, nth($gridBetweens, $j), $extraction, "md");
+      }
+    }
+  }
+
+  @include gr-lr {
+    @for $i from 1 through $gridBoundary {
+      @for $j from 1 through length($gridBetweens) {
+        $extraction: #{(nth($gridBetweens, $j) * 2) * ($gridBoundary / $i)}px;
+        @include gr-create($i, nth($gridBetweens, $j), $extraction, "lr");
+      }
+    }
+  }
+}

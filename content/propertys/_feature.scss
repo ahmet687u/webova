@@ -1,0 +1,19 @@
+.flex__center {
+  @extend %flexCenter;
+}
+
+@include gr-xxs {
+  @include feature-create($d-key);
+}
+
+@include gr-sm {
+  @include feature-create($d-key, "sm");
+}
+
+@include gr-md {
+  @include feature-create($d-key, "md");
+}
+
+@include gr-lr {
+  @include feature-create($d-key, "lr");
+}

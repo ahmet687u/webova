@@ -1,0 +1,42 @@
+$gridBoundary: 12;
+$gridBetweens: 0, 10, 20;
+$mp: 5, 10, 15, 20;
+
+$mp-key: (
+  "margin": "m",
+  "margin-right": "mr",
+  "margin-left": "ml",
+  "margin-top": "mt",
+  "margin-bottom": "mb",
+  "padding": "p",
+  "padding-right": "pr",
+  "padding-left": "pl",
+  "padding-top": "pt",
+  "padding-bottom": "pb",
+  "mp-key": "mp",
+);
+
+$grid-lr: 1024;
+$grid-md: 800;
+$grid-sm: 450;
+$grid-xxs: 0;
+
+$d-key: (
+  //--- Display prop create
+  "display": (
+    "class": d,
+    "feature-list": (flex, block, inline-block, inline, none, inline-flex, grid, inline-grid)
+  ),
+  "justify-content": (
+    "class": justify,
+    "feature-list": (flex-start, flex-end, center, space-between, space-around, space-evenly, initial, inherit)
+  ),
+  "align-items": (
+    "class": align,
+    "feature-list": (stretch, center, flex-start, flex-end, baseline, initial, inherit)
+  ),
+  "flex-direction": (
+    "class": direction,
+    "feature-list": (row, row-reverse, column, column-reverse, initial, inherit)
+  )
+);

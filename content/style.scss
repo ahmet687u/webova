@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//--- Import Helper Pages
+@import "./helper/_variables";
+@import "./helper/_responsive";
+@import "./helper/functions/grid";
+@import "./helper/functions/feature";
+
+//--- Import Pages
+@import "./propertys/_mp";
+@import "./propertys/_grid";
+@import "./propertys/feature";
