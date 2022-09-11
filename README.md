@@ -29,19 +29,23 @@ oluşturalacaktır. Ayrıca "grid__box" yerine "grid__container" 'da kullanılab
 
 <hr />
 
-### Örnek Display Özellikleri
+### Diğer Özellikler
 1. display = flex, block, inline-block, inline, none, inline-flex, grid, inline-grid
-2. align-items = stretch, center, flex-start, flex-end, baseline, initial, inherit
-3. justify-content = flex-start, flex-end, center, space-between, space-around, space-evenly, initial, inherit
-4. flex-direction = row, row-reverse, column, column-reverse, initial, inherit
+2. align-items = stretch, center, flex-start, flex-end, baseline
+3. justify-content = flex-start, flex-end, center, space-between, space-around, space-evenly
+4. flex-direction = row, row-reverse, column, column-reverse
+5. box-sizing = border-box, content-box
+6. position = static, sticky, absolute, relative, fixed
 
 Kullanımları örnek kodda gösterildiği gibidir.
 
 ```
 <div class="d_flex"></div>
-<div class="align_flex-start"></div>
-<div class="justify_center"></div>
-<div class="direction_row"></div>
+<div class="ai_flex-start"></div>
+<div class="jc_center"></div>
+<div class="dir_row"></div>
+<div class="bs_border-box"></div>
+<div class="pos_fixed"></div>
 ```
 
 Eğer display özelliklerini yukarıdaki örneğe benzer şekilde kullanırsak tüm ekran çözünürlükleri için geçerli olacaktır. Eğer sadece tek bir çözünürlük için geçerli olsun istiyorsak:
