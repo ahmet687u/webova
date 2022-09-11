@@ -16,16 +16,16 @@ Webova ekranı 12 birime böler. "gr-" ifadesinden sonra gelen ilk değer class 
 ### Örnek Responsive Kodları
 
 ```
-<div class="grid__box">
-  <div class="grid__row">
-    <div class="gr-8-20-md gr-6-10"></div>
-    <div class="gr-4-20-md gr-6-10"></div>
+<div class="gr_box">
+  <div class="gr_row">
+    <div class="gr-8-20-md gr-6-10-sm"></div>
+    <div class="gr-4-20-md gr-6-10-sm"></div>
   </div>
 </div>
 ```
 
 Yukarıdaki kodda 0px 'den 800px 'e kadar 6 birimlik bir boyut oluşturalacaktır, 800px 'den sonrası için class 'ta belirtilen değerler kadarlık boyut 
-oluşturalacaktır. Ayrıca "grid__box" yerine "grid__container" 'da kullanılabilir. Aralarındaki fark "grid__box" ekranın tamamını kullanırken, "grid__container" ekranın %85 'lik bir kısmını kullanır.
+oluşturalacaktır. Ayrıca "gr_box" yerine "gr_container" 'da kullanılabilir. Aralarındaki fark "gr_box" ekranın tamamını kullanırken, "gr_container" ekranın %85 'lik bir kısmını kullanır.
 
 <hr />
 
@@ -40,12 +40,12 @@ oluşturalacaktır. Ayrıca "grid__box" yerine "grid__container" 'da kullanılab
 Kullanımları örnek kodda gösterildiği gibidir.
 
 ```
-<div class="d_flex"></div>
-<div class="ai_flex-start"></div>
-<div class="jc_center"></div>
-<div class="dir_row"></div>
-<div class="bs_border-box"></div>
-<div class="pos_fixed"></div>
+<div class="d_flex"></div> <!-- display: flex -->
+<div class="ai_flex-start"></div> <!-- align-items: flex-start -->
+<div class="jc_center"></div> <!-- justify-content: center -->
+<div class="dir_row"></div> <!-- flex-direction: row -->
+<div class="bs_border-box"></div> <!-- box-sizing: border-box -->
+<div class="pos_fixed"></div> <!-- position: fixed -->
 ```
 
 Eğer display özelliklerini yukarıdaki örneğe benzer şekilde kullanırsak tüm ekran çözünürlükleri için geçerli olacaktır. Eğer sadece tek bir çözünürlük için geçerli olsun istiyorsak:
