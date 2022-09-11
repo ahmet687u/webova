@@ -1,33 +1,15 @@
 @mixin gr-create($unit, $between, $extr, $breakpoint: "", $required: false) {
   @if $breakpoint=="" {
-    @if $required==false {
-      .gr-#{$unit}-#{$between} {
-        margin: #{$between}px;
-        width: calc((100% - #{$extr}) / (#{$gridBoundary} / #{$unit}));
-      }
-    }
-
-    @else {
-      .gr-#{$unit}-#{$between} {
-        margin: #{$between}px !important;
-        width: calc((100% - #{$extr}) / (#{$gridBoundary} / #{$unit})) !important;
-      }
+    .gr-#{$unit}-#{$between} {
+      margin: #{$between}px;
+      width: calc((100% - #{$extr}) / (#{$gridBoundary} / #{$unit}));
     }
   }
 
   @else {
-    @if $required==false {
-      .gr-#{$unit}-#{$between}-#{$breakpoint} {
-        margin: #{$between}px;
-        width: calc((100% - #{$extr}) / (#{$gridBoundary} / #{$unit}));
-      }
-    }
-
-    @else {
-      .gr-#{$unit}-#{$between}-#{$breakpoint} {
-        margin: #{$between}px !important;
-        width: calc((100% - #{$extr}) / (#{$gridBoundary} / #{$unit})) !important;
-      }
+    .gr-#{$unit}-#{$between}-#{$breakpoint} {
+      margin: #{$between}px;
+      width: calc((100% - #{$extr}) / (#{$gridBoundary} / #{$unit}));
     }
   }
 }

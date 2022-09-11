@@ -28,15 +28,23 @@ $d-key: (
     "feature-list": (flex, block, inline-block, inline, none, inline-flex, grid, inline-grid)
   ),
   "justify-content": (
-    "class": justify,
+    "class": jc,
     "feature-list": (flex-start, flex-end, center, space-between, space-around, space-evenly, initial, inherit)
   ),
   "align-items": (
-    "class": align,
-    "feature-list": (stretch, center, flex-start, flex-end, baseline, initial, inherit)
+    "class": ai,
+    "feature-list": (stretch, center, flex-start, flex-end, baseline)
   ),
   "flex-direction": (
-    "class": direction,
-    "feature-list": (row, row-reverse, column, column-reverse, initial, inherit)
+    "class": dir,
+    "feature-list": (row, row-reverse, column, column-reverse)
+  ),
+  "box-sizing": (
+    "class": bs,
+    "feature-list": (border-box, content-box)
+  ),
+  "position": (
+    "class": pos,
+    "feature-list": (static, sticky, absolute, relative, fixed)
   )
 );
